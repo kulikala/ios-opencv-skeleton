@@ -18,6 +18,12 @@
  */
 @interface OpenCVWrapper : NSObject
 
+- (void)createCameraWithParentView:(UIImageView *)parentView;
+
+- (void)start;
+
+- (void)stop;
+
 @end
 
 #endif /* OpenCVWrapper_h */
