@@ -12,6 +12,7 @@
 		C2FAE21D235DA4C0000E3880 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FAE21B235DA4C0000E3880 /* Main.storyboard */; };
 		C2FAE21F235DA4C0000E3880 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2FAE21E235DA4C0000E3880 /* Assets.xcassets */; };
 		C2FAE222235DA4C0000E3880 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FAE220235DA4C0000E3880 /* LaunchScreen.storyboard */; };
+		C2FAE231235DA788000E3880 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = C2FAE22E235DA788000E3880 /* OpenCVWrapper.mm */; };
 		DFB9AA5BB3964CE0FEE36847 /* Pods_OpenCVSkeleton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 171D10FE359175CF44889909 /* Pods_OpenCVSkeleton.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,8 @@
 		C2FAE221235DA4C0000E3880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2FAE223235DA4C0000E3880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2FAE229235DA6AC000E3880 /* OpenCVSkeleton-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCVSkeleton-Bridging-Header.h"; sourceTree = "<group>"; };
+		C2FAE22D235DA788000E3880 /* OpenCVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		C2FAE22E235DA788000E3880 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 		C2FAE214235DA4C0000E3880 /* OpenCVSkeleton */ = {
 			isa = PBXGroup;
 			children = (
+				C2FAE22D235DA788000E3880 /* OpenCVWrapper.h */,
+				C2FAE22E235DA788000E3880 /* OpenCVWrapper.mm */,
 				C2FAE215235DA4C0000E3880 /* AppDelegate.swift */,
 				C2FAE219235DA4C0000E3880 /* ViewController.swift */,
 				C2FAE21B235DA4C0000E3880 /* Main.storyboard */,
@@ -188,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2FAE231235DA788000E3880 /* OpenCVWrapper.mm in Sources */,
 				C2FAE21A235DA4C0000E3880 /* ViewController.swift in Sources */,
 				C2FAE216235DA4C0000E3880 /* AppDelegate.swift in Sources */,
 			);
