@@ -14,9 +14,25 @@
 
 
 /**
+ HandlerDelegate protocol
+ */
+@protocol HandlerDelegate <NSObject>
+
+@optional
+- (void)didProcessed;
+
+@end
+
+
+/**
  Objective-C implementations using OpenCV
  */
 @interface OpenCVWrapper : NSObject
+
+/**
+ delegate objects
+ */
+@property (weak, nonatomic) id <HandlerDelegate> delegate;
 
 - (void)createCameraWithParentView:(UIImageView *)parentView;
 

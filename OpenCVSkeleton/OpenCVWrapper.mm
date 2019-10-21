@@ -75,6 +75,10 @@ static const long kFPS = 10;
 
 - (void)processImage:(Mat &)image {
     [self contour:image];
+    
+    if ([self.delegate respondsToSelector:@selector(didProcessed)]) {
+        [self.delegate didProcessed];
+    }
 }
 
 - (void)contour:(Mat &)image {

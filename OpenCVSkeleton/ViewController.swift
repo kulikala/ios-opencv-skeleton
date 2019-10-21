@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, HandlerDelegate {
 
     @IBOutlet weak var cameraView: UIImageView!
     
@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        
+        openCV.delegate = self
     }
     
     override func viewDidLoad() {
@@ -35,6 +37,10 @@ class ViewController: UIViewController {
         super.viewDidDisappear(animated)
         
         openCV.stop()
+    }
+    
+    func didProcessed() {
+        NSLog("[didProcessed]")
     }
     
 }
