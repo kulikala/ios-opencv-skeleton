@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C2FAE216235DA4C0000E3880 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAE215235DA4C0000E3880 /* AppDelegate.swift */; };
-		C2FAE218235DA4C0000E3880 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAE217235DA4C0000E3880 /* SceneDelegate.swift */; };
 		C2FAE21A235DA4C0000E3880 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FAE219235DA4C0000E3880 /* ViewController.swift */; };
 		C2FAE21D235DA4C0000E3880 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FAE21B235DA4C0000E3880 /* Main.storyboard */; };
 		C2FAE21F235DA4C0000E3880 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2FAE21E235DA4C0000E3880 /* Assets.xcassets */; };
@@ -22,7 +21,6 @@
 		9B91038F7581EFCB1F6FC32B /* Pods-OpenCVSkeleton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSkeleton.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSkeleton/Pods-OpenCVSkeleton.debug.xcconfig"; sourceTree = "<group>"; };
 		C2FAE212235DA4C0000E3880 /* OpenCVSkeleton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVSkeleton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FAE215235DA4C0000E3880 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C2FAE217235DA4C0000E3880 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C2FAE219235DA4C0000E3880 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C2FAE21C235DA4C0000E3880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2FAE21E235DA4C0000E3880 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,7 +54,6 @@
 				9B91038F7581EFCB1F6FC32B /* Pods-OpenCVSkeleton.debug.xcconfig */,
 				09985B5E06AB459DCFBF8787 /* Pods-OpenCVSkeleton.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				C2FAE215235DA4C0000E3880 /* AppDelegate.swift */,
-				C2FAE217235DA4C0000E3880 /* SceneDelegate.swift */,
 				C2FAE219235DA4C0000E3880 /* ViewController.swift */,
 				C2FAE21B235DA4C0000E3880 /* Main.storyboard */,
 				C2FAE21E235DA4C0000E3880 /* Assets.xcassets */,
@@ -191,7 +187,6 @@
 			files = (
 				C2FAE21A235DA4C0000E3880 /* ViewController.swift in Sources */,
 				C2FAE216235DA4C0000E3880 /* AppDelegate.swift in Sources */,
-				C2FAE218235DA4C0000E3880 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +333,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OpenCVSkeleton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OpenCVSkeleton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
