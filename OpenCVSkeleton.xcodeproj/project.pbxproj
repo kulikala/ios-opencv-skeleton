@@ -26,6 +26,7 @@
 		C2FAE21E235DA4C0000E3880 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2FAE221235DA4C0000E3880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2FAE223235DA4C0000E3880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2FAE229235DA6AC000E3880 /* OpenCVSkeleton-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCVSkeleton-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +85,7 @@
 				C2FAE21E235DA4C0000E3880 /* Assets.xcassets */,
 				C2FAE220235DA4C0000E3880 /* LaunchScreen.storyboard */,
 				C2FAE223235DA4C0000E3880 /* Info.plist */,
+				C2FAE229235DA6AC000E3880 /* OpenCVSkeleton-Bridging-Header.h */,
 			);
 			path = OpenCVSkeleton;
 			sourceTree = "<group>";
@@ -121,6 +123,7 @@
 				TargetAttributes = {
 					C2FAE211235DA4C0000E3880 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -331,6 +334,7 @@
 			baseConfigurationReference = 9B91038F7581EFCB1F6FC32B /* Pods-OpenCVSkeleton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OpenCVSkeleton/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -340,6 +344,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.kulikala.OpenCVSkeleton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCVSkeleton/OpenCVSkeleton-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -350,6 +356,7 @@
 			baseConfigurationReference = 09985B5E06AB459DCFBF8787 /* Pods-OpenCVSkeleton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OpenCVSkeleton/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -359,6 +366,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.kulikala.OpenCVSkeleton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCVSkeleton/OpenCVSkeleton-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
