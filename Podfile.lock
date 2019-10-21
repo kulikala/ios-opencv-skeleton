@@ -1,0 +1,16 @@
+PODS:
+  - OpenCV2 (4.1.1)
+
+DEPENDENCIES:
+  - OpenCV2
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - OpenCV2
+
+SPEC CHECKSUMS:
+  OpenCV2: 3d576089a3ecd29721be44221100917b86a59e2f
+
+PODFILE CHECKSUM: bf97455b49dc1880a51bf51289fecd1abe052aac
+
+COCOAPODS: 1.7.5

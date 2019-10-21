@@ -13,9 +13,13 @@
 		C2FAE21D235DA4C0000E3880 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FAE21B235DA4C0000E3880 /* Main.storyboard */; };
 		C2FAE21F235DA4C0000E3880 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2FAE21E235DA4C0000E3880 /* Assets.xcassets */; };
 		C2FAE222235DA4C0000E3880 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FAE220235DA4C0000E3880 /* LaunchScreen.storyboard */; };
+		DFB9AA5BB3964CE0FEE36847 /* Pods_OpenCVSkeleton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 171D10FE359175CF44889909 /* Pods_OpenCVSkeleton.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09985B5E06AB459DCFBF8787 /* Pods-OpenCVSkeleton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSkeleton.release.xcconfig"; path = "Target Support Files/Pods-OpenCVSkeleton/Pods-OpenCVSkeleton.release.xcconfig"; sourceTree = "<group>"; };
+		171D10FE359175CF44889909 /* Pods_OpenCVSkeleton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenCVSkeleton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B91038F7581EFCB1F6FC32B /* Pods-OpenCVSkeleton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVSkeleton.debug.xcconfig"; path = "Target Support Files/Pods-OpenCVSkeleton/Pods-OpenCVSkeleton.debug.xcconfig"; sourceTree = "<group>"; };
 		C2FAE212235DA4C0000E3880 /* OpenCVSkeleton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVSkeleton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FAE215235DA4C0000E3880 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2FAE217235DA4C0000E3880 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB9AA5BB3964CE0FEE36847 /* Pods_OpenCVSkeleton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		935BCE4D278C6C81A159210E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				171D10FE359175CF44889909 /* Pods_OpenCVSkeleton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5A8D4F965DF15EA3F97C664 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B91038F7581EFCB1F6FC32B /* Pods-OpenCVSkeleton.debug.xcconfig */,
+				09985B5E06AB459DCFBF8787 /* Pods-OpenCVSkeleton.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C2FAE209235DA4C0000E3880 = {
 			isa = PBXGroup;
 			children = (
 				C2FAE214235DA4C0000E3880 /* OpenCVSkeleton */,
 				C2FAE213235DA4C0000E3880 /* Products */,
+				B5A8D4F965DF15EA3F97C664 /* Pods */,
+				935BCE4D278C6C81A159210E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2FAE226235DA4C0000E3880 /* Build configuration list for PBXNativeTarget "OpenCVSkeleton" */;
 			buildPhases = (
+				E89DAD2EC1173AC34A7DD196 /* [CP] Check Pods Manifest.lock */,
 				C2FAE20E235DA4C0000E3880 /* Sources */,
 				C2FAE20F235DA4C0000E3880 /* Frameworks */,
 				C2FAE210235DA4C0000E3880 /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E89DAD2EC1173AC34A7DD196 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCVSkeleton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C2FAE20E235DA4C0000E3880 /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		C2FAE227235DA4C0000E3880 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B91038F7581EFCB1F6FC32B /* Pods-OpenCVSkeleton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +351,7 @@
 		};
 		C2FAE228235DA4C0000E3880 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09985B5E06AB459DCFBF8787 /* Pods-OpenCVSkeleton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
