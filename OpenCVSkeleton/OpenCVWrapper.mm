@@ -74,6 +74,21 @@ static const long kFPS = 10;
  */
 
 - (void)processImage:(Mat &)image {
+    [self contour:image];
+}
+
+- (void)contour:(Mat &)image {
+    Mat imgWork;
+    
+    // Convert image to gray scale
+    cvtColor(image, imgWork, COLOR_BGRA2GRAY);
+    
+    // Adaptive thresholding
+    medianBlur(imgWork, imgWork, 5);
+    adaptiveThreshold(imgWork, imgWork, 255, ADAPTIVE_THRESH_GAUSSIAN_C, THRESH_BINARY, 11, 2);
+    
+    // Return image
+    cvtColor(imgWork, image, COLOR_GRAY2BGRA);
 }
 
 @end
